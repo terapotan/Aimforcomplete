@@ -15,24 +15,26 @@ namespace AimforconpleteTDD
 		
 		TEST_METHOD(ballDraw)
 		{
-			ball* ballp = new ball();
+			std::unique_ptr<ball> ballp(new ball());
 			Assert::IsTrue(ballp->show());
 		}
 
 
 		TEST_METHOD(barDraw) {
 
-			bar* barp = new bar();
+			std::unique_ptr<bar> barp(new bar());
 			Assert::IsTrue(barp->show());
 
 		}
 
 
 		TEST_METHOD(blockDraw) {
-			block* blockp = new block();
+			std::unique_ptr<block> blockp(new block());
 			Assert::IsTrue(blockp->show());
 
 		}
+
+
 
 
 
