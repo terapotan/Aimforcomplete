@@ -1,9 +1,10 @@
 #pragma once
-class ball
+#include "showThings.h"
+
+class ball : public showThings
 {
 public:
 	ball();
-	bool show();
 	virtual ~ball();
 };
 

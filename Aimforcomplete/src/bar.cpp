@@ -5,12 +5,6 @@ bar::bar()
 {
 }
 
-bool bar::show()
-{
-	return true;
-}
-
-
 bar::~bar()
 {
 }

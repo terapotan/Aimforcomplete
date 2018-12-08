@@ -1,9 +1,10 @@
 #pragma once
-class bar
+#include "showThings.h"
+
+class bar : public showThings
 {
 public:
 	bar();
-	bool show();
 	virtual ~bar();
 };
 

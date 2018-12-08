@@ -1,9 +1,9 @@
 #pragma once
-class block
+#include "showThings.h"
+class block : public showThings
 {
 public:
 	block();
-	bool show();
 	virtual ~block();
 };
 

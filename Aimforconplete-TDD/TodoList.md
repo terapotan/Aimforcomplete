@@ -6,18 +6,22 @@
 - ~~ヘッダのインクルード~~
 - ~~リンク設定~~
 - ~~コンパイル~~
-- 
+- ~~show関数の重複~~
+- 生ポインタが使われている
 # 現在のUML図
 ~~~plantUML
+class showThings{
+    + bool show()
+}
 class bar{
-   + bool show()
 }
 class block{
-    + bool show()
 }
 class ball{
-    + bool show()
 }
 
+showThings <|-- bar
+showThings <|-- block
+showThings <|-- ball
 
 ~~~
