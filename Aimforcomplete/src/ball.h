@@ -5,6 +5,7 @@ class ball : public showThings
 {
 public:
 	ball();
+	virtual bool show() override;
 	virtual ~ball();
 };
 

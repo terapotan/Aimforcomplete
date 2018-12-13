@@ -9,6 +9,11 @@ bar::bar(int barx){
 	this->barx = barx;
 }
 
+bool bar::show()
+{
+	return true;
+}
+
 void bar::moveRight(){
 	barx = barx + 1;
 }

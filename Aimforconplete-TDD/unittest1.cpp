@@ -17,6 +17,7 @@ namespace AimforconpleteTDD
 		{
 			std::unique_ptr<ball> ballp(new ball());
 			Assert::IsTrue(ballp->show());
+
 		}
 
 

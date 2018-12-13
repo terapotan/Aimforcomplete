@@ -2,8 +2,7 @@
 class showThings
 {
 public:
-	showThings();
-	bool show();
-	virtual ~showThings();
+	virtual bool show() = 0;
+	virtual ~showThings() {};
 };
 
