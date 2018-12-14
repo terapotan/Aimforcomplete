@@ -14,14 +14,20 @@
 - ~~barクラスにbarxを追加~~
 - ~~barクラスにmoveRight,moveLeft,getPointXを追加~~
 # TodoList-TTDD
-- ~~ボールの画像が表示される(場所はどこでもよい)~~
-- ~~バーの画像が表示される(場所はどこでもよい)~~
+- ボールの画像が表示される(場所はどこでもよい)
+- バーの画像が表示される(場所はどこでもよい)
+- ブロックの画像が表示される(場所はどこでもよい)
 - ~~showThingsをインターフェース化する~~
 - ~~bar,ball,blockにshow関数をオーバーロードする処理を追加~~
 - ~~ボールの画像表示コードをballクラスにコピぺ。~~
-- 
+- ~~drawingLibクラスを作成~~
+- ~~drawPictureメソッドを作成~~
+- ~~コードをコピペ~~
+- ~~barのshow関数のコードをいじくる~~
+- 引き続き、ball,blockも削除
+- 最後にテストをする
 # 現在のUML図
-~~~plantUML
+~~~plantuml
 @startuml
 interface showThings{
     + bool show()
@@ -32,9 +38,15 @@ class block{
 }
 class ball{
 }
+class drawingLib{
+    + pictureDraw()
+}
 
 showThings <|.. bar
 showThings <|.. block
 showThings <|.. ball
+drawingLib <-left- bar
 @enduml
 ~~~
+
+

@@ -49,6 +49,13 @@ namespace AimforconpleteTDD
 		}
 
 
+		TEST_METHOD(inKeyMoveBar) {
+
+
+		}
+
+
+
 
 
 

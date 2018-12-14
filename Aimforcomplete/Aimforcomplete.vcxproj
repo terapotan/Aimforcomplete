@@ -22,6 +22,7 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\drawingLib.cpp" />
     <ClCompile Include="src\block.cpp" />
     <ClCompile Include="src\bar.cpp" />
     <ClCompile Include="src\ball.cpp" />
@@ -29,6 +30,7 @@
     <ClCompile Include="src\stdafx.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\drawingLib.h" />
     <ClInclude Include="src\showThings.h" />
     <ClInclude Include="src\block.h" />
     <ClInclude Include="src\bar.h" />
@@ -41,6 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="resource\test_ball.png" />
+    <Image Include="resource\test_bar.png" />
+    <Image Include="resource\test_block.png" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
