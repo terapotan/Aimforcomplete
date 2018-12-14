@@ -15,15 +15,15 @@
 - ~~barクラスにmoveRight,moveLeft,getPointXを追加~~
 # TodoList-TTDD
 - ~~ボールの画像が表示される(場所はどこでもよい)~~
-- バーの画像が表示される(場所はどこでもよい)
+- ~~バーの画像が表示される(場所はどこでもよい)~~
 - ~~showThingsをインターフェース化する~~
 - ~~bar,ball,blockにshow関数をオーバーロードする処理を追加~~
 - ~~ボールの画像表示コードをballクラスにコピぺ。~~
-
+- 
 # 現在のUML図
 ~~~plantUML
 @startuml
-class showThings{
+interface showThings{
     + bool show()
 }
 class bar{
@@ -33,8 +33,8 @@ class block{
 class ball{
 }
 
-showThings <|-- bar
-showThings <|-- block
-showThings <|-- ball
+showThings <|.. bar
+showThings <|.. block
+showThings <|.. ball
 @enduml
 ~~~
