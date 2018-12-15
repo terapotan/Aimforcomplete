@@ -24,7 +24,7 @@ int bar::getPointX()
 bool bar::show() {
 #ifndef UNITTESTMODE_ENABLE
 	std::unique_ptr<drawingLib> drawp(new drawingLib());
-	drawp->drawPicture("./resource/test_bar.png");
+	drawp->drawPicture("./resource/test_bar.png", barx, 0);
 #endif
 	return true;
 }

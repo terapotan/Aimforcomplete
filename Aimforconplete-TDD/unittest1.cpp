@@ -39,12 +39,19 @@ namespace AimforconpleteTDD
 		TEST_METHOD(moveBar) {
 			std::unique_ptr<bar> barpLeft(new bar(0));
 			std::unique_ptr<bar> barpRight(new bar(0));
+			std::unique_ptr<bar> movedBar(new bar(0));
 
 			barpRight->moveRight();
 			Assert::AreEqual(barpRight->getPointX(), 1);
 
 			barpLeft->moveLeft();
 			Assert::AreEqual(barpLeft->getPointX(), -1);
+
+			for (int i = 0; i < 100; i++) {
+				movedBar->moveRight();
+			}
+			Assert::AreEqual(movedBar->getPointX(), 100);
+			Assert::IsTrue(movedBar->show());
 
 		}
 

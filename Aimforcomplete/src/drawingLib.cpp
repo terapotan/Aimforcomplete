@@ -10,11 +10,10 @@ drawingLib::~drawingLib()
 {
 }
 
-void drawingLib::drawPicture(std::string fileName) {
+void drawingLib::drawPicture(std::string fileName,int pointX,int pointY) {
 #ifndef UNITTESTMODE_ENABLE
-
 	int Handle; 
 	Handle = LoadGraph(fileName.c_str()); 
-	DrawGraph(50, 100, Handle, TRUE); 
+	DrawGraph(pointX,pointY, Handle, TRUE); 
 #endif
 }

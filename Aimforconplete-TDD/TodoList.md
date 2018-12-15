@@ -13,6 +13,8 @@
 - ~~barクラスにint型を引数にとるコンストラクタを作成。~~
 - ~~barクラスにbarxを追加~~
 - ~~barクラスにmoveRight,moveLeft,getPointXを追加~~
+- barクラスにmoveRight()を100回実行後getPointX()=100を確認,その後show()=trueを確認。
+
 # TodoList-TTDD
 - ~~ボールの画像が表示される(場所はどこでもよい)~~
 - ~~バーの画像が表示される(場所はどこでもよい)~~
@@ -26,6 +28,7 @@
 - ~~barのshow関数のコードをいじくる~~
 - ~~引き続き、ball,blockも削除~~
 - ~~最後にテストをする~~
+- ~~barクラスのbarx=100でbarxを初期化し、バーがその位置で描画されている~~
 # 現在のUML図
 ~~~plantuml
 @startuml
@@ -33,19 +36,23 @@ interface showThings{
     + bool show()
 }
 class bar{
+    - int barx
 }
 class block{
 }
 class ball{
 }
 class drawingLib{
-    + pictureDraw()
+    + pictureDraw(int pointX,pointY)
 }
 
 showThings <|.. bar
 showThings <|.. block
 showThings <|.. ball
-drawingLib <-left- bar
+drawingLib <-down- bar
+drawingLib <-down- block
+drawingLib <-down- ball
+
 @enduml
 ~~~
 
