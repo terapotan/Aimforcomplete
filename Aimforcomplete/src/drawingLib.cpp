@@ -1,4 +1,5 @@
 #include "drawingLib.h"
+#include "settings.h"
 
 
 drawingLib::drawingLib()

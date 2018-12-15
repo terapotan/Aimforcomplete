@@ -13,7 +13,7 @@
 - ~~barクラスにint型を引数にとるコンストラクタを作成。~~
 - ~~barクラスにbarxを追加~~
 - ~~barクラスにmoveRight,moveLeft,getPointXを追加~~
-- barクラスにmoveRight()を100回実行後getPointX()=100を確認,その後show()=trueを確認。
+- ~~barクラスにmoveRight()を100回実行後getPointX()=100を確認,その後show()=trueを確認。~~
 
 # TodoList-TTDD
 - ~~ボールの画像が表示される(場所はどこでもよい)~~
@@ -29,6 +29,8 @@
 - ~~引き続き、ball,blockも削除~~
 - ~~最後にテストをする~~
 - ~~barクラスのbarx=100でbarxを初期化し、バーがその位置で描画されている~~
+- ~~stdafx.hに書いていたUNITTESTMODE_ENABLEを専用のヘッダーファイルに移し、UNITTESTMODE_ENABLEが必要なソースのみこれをインクルードするようにする。(コンパイル時間の短縮)~~
+
 # 現在のUML図
 ~~~plantuml
 @startuml
