@@ -3,6 +3,7 @@
 #include "../Aimforcomplete/src/ball.h"
 #include "../Aimforcomplete/src/bar.h"
 #include "../Aimforcomplete/src/block.h"
+#include "../Aimforcomplete/src/userInKey.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -56,7 +57,12 @@ namespace AimforconpleteTDD
 		}
 
 
-		TEST_METHOD(inKeyMoveBar) {
+		TEST_METHOD(inUserKey) {
+			std::unique_ptr<userInKey> keyp(new userInKey());
+			char* keyData = new char[256];
+			keyp->getUserHitKey(keyData);
+			//KEY_INPUT_A=0x1E
+			Assert::IsTrue(keyData[0x1E] == 1);
 
 
 		}

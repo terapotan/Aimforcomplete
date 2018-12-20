@@ -14,6 +14,8 @@
 - ~~barクラスにbarxを追加~~
 - ~~barクラスにmoveRight,moveLeft,getPointXを追加~~
 - ~~barクラスにmoveRight()を100回実行後getPointX()=100を確認,その後show()=trueを確認。~~
+- ~~(keyはchar型の配列ポインタ)getUserHitKey(key);を呼び出し、key[KEY_INPUT_A(0x1E)]==1が真。~~  
+~~- userInKeyクラスを作成。メンバ関数にgetUserHitKey(key)を作成。 ~~ 
 
 # TodoList-TTDD
 - ~~ボールの画像が表示される(場所はどこでもよい)~~
@@ -46,6 +48,10 @@ class ball{
 }
 class drawingLib{
     + pictureDraw(int pointX,pointY)
+}
+
+class userInKey{
+    + getUserHitKey(char* recKeyData)
 }
 
 showThings <|.. bar

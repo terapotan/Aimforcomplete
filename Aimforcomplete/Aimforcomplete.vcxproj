@@ -28,6 +28,7 @@
     <ClCompile Include="src\ball.cpp" />
     <ClCompile Include="src\DxLibProjectTemp.cpp" />
     <ClCompile Include="src\stdafx.cpp" />
+    <ClCompile Include="src\userInKey.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\drawingLib.h" />
@@ -38,6 +39,7 @@
     <ClInclude Include="src\ball.h" />
     <ClInclude Include="src\stdafx.h" />
     <ClInclude Include="src\targetver.h" />
+    <ClInclude Include="src\userInKey.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Log.txt" />
