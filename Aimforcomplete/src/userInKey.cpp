@@ -1,6 +1,6 @@
 #include "userInKey.h"
 #include "DxLib.h"
-
+#include "settings.h"
 
 userInKey::userInKey()
 {

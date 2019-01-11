@@ -15,7 +15,7 @@
 - ~~barクラスにmoveRight,moveLeft,getPointXを追加~~
 - ~~barクラスにmoveRight()を100回実行後getPointX()=100を確認,その後show()=trueを確認。~~
 - ~~(keyはchar型の配列ポインタ)getUserHitKey(key);を呼び出し、key[KEY_INPUT_A(0x1E)]==1が真。~~  
-~~- userInKeyクラスを作成。メンバ関数にgetUserHitKey(key)を作成。 ~~ 
+- ~~userInKeyクラスを作成。メンバ関数にgetUserHitKey(key)を作成。~~ 
 
 # TodoList-TTDD
 - ~~ボールの画像が表示される(場所はどこでもよい)~~
@@ -34,6 +34,9 @@
 - ~~stdafx.hに書いていたUNITTESTMODE_ENABLEを専用のヘッダーファイルに移し、UNITTESTMODE_ENABLEが必要なソースのみこれをインクルードするようにする。(コンパイル時間の短縮)~~
 - ~~aキーを打つとプログラムが終了する。~~  
 - 勝手に右にバー(bar)が動く。
+~~- バーを描画する~~
+~~- aキーを打つと左に、sキーを押すと右に動く。~~
+
 
 
 # 現在のUML図
@@ -44,6 +47,10 @@ interface showThings{
 }
 class bar{
     - int barx
+    + moveRight()
+    + moveLeft()
+    + getPointX()
+    + show()
 }
 class block{
 }

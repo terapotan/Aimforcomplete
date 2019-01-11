@@ -63,8 +63,6 @@ namespace AimforconpleteTDD
 			keyp->getUserHitKey(keyData);
 			//KEY_INPUT_A=0x1E
 			Assert::IsTrue(keyData[0x1E] == 1);
-
-
 		}
 
 
