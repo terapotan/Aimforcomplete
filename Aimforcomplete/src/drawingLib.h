@@ -4,6 +4,6 @@ class drawingLib
 public:
 	drawingLib();
 	virtual ~drawingLib();
-	virtual void drawPicture(std::string fileName,int pointX,int pointY);
+	virtual void drawPicture(int imageHandle,int pointX,int pointY);
 };
 

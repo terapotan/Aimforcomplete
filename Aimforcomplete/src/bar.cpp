@@ -1,5 +1,6 @@
 #include "bar.h"
 #include "drawingLib.h"
+#include "settings.h"
 
 bar::bar()
 {
@@ -24,7 +25,7 @@ int bar::getPointX()
 bool bar::show() {
 #ifndef UNITTESTMODE_ENABLE
 	std::unique_ptr<drawingLib> drawp(new drawingLib());
-	drawp->drawPicture("./resource/test_bar.png", barx, 0);
+	drawp->drawPicture(LoadGraph("./resource/test_bar.png"), barx, 0);
 #endif
 	return true;
 }

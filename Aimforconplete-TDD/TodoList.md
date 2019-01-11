@@ -36,6 +36,18 @@
 - 勝手に右にバー(bar)が動く。
 ~~- バーを描画する~~
 ~~- aキーを打つと左に、sキーを押すと右に動く。~~
+- メインループ内にあるif文の重複を無くす  
+- 毎回ロードして画像を表示しているのを直す  
+- ~~drawPicture関数の引数変更~~
+- ~~関数の処理変更~~
+- barクラスのハンドル変数をメンバ変数にする
+- コンストラクタに画面ロード処理追加
+- show関数にある画面ロード処理を削除
+- テスト
+- ball,blockにも実行
+- テストコードを書き、テスト
+
+
 
 
 
@@ -53,11 +65,13 @@ class bar{
     + show()
 }
 class block{
+    + show()
 }
 class ball{
+    + show()
 }
 class drawingLib{
-    + pictureDraw(int pointX,pointY)
+    + pictureDraw(int imageHandle,int pointX,int pointY)
 }
 
 class userInKey{
