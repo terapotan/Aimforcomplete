@@ -1,6 +1,9 @@
 #pragma once
 #include "showThings.h"
 
+#define MOVE_RIGHT 2
+#define MOVE_LEFT 1
+
 class bar : public showThings
 {
 private:
@@ -12,6 +15,7 @@ public:
 	virtual bool show() override;
 	void moveRight();
 	void moveLeft();
+	void move(char moveNum);
 	int getPointX();
 	virtual ~bar();
 };
