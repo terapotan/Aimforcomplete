@@ -19,10 +19,10 @@ bar::bar(int barx){
 }
 
 void bar::moveRight(){
-	barx = barx + 1;
+	barx = barx + 2;
 }
 void bar::moveLeft() {
-	barx = barx - 1;
+	barx = barx - 2;
 }
 
 //moveNum=1‚ÌAmoveLeftŠÖ”‚ªŒÄ‚Ño‚³‚ê‚éB
@@ -45,7 +45,7 @@ int bar::getPointX()
 bool bar::show() {
 #ifndef UNITTESTMODE_ENABLE
 	std::unique_ptr<drawingLib> drawp(new drawingLib());
-	drawp->drawPicture(barImageHandle, barx, 0);
+	drawp->drawPicture(barImageHandle, barx, 400);
 #endif
 	return true;
 }

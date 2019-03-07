@@ -51,7 +51,7 @@
 - ~~コンストラクタに画面ロード処理(loadgraph関数実行)追加~~
 - ~~show関数にある画面ロード処理(loadgraph関数実行)を削除~~
 - ~~移動速度を目に見えるレベルまで抑える~~
-
+- 
 
 
 
@@ -64,24 +64,24 @@ interface showThings{
 }
 class bar{
     - int barx
-    + moveRight()
-    + moveLeft()
-    + move(char moveNum)
-    + getPointX()
-    + show()
+    + void moveRight()
+    + void moveLeft()
+    + void move(char moveNum)
+    + int getPointX()
+    + void show()
 }
 class block{
-    + show()
+    + void show()
 }
 class ball{
-    + show()
+    + void show()
 }
 class drawingLib{
-    + pictureDraw(int imageHandle,int pointX,int pointY)
+    + void pictureDraw(int imageHandle,int pointX,int pointY)
 }
 
 class userInKey{
-    + getUserHitKey(char* recKeyData)
+    + void getUserHitKey(char* recKeyData)
 }
 
 showThings <|.. bar
