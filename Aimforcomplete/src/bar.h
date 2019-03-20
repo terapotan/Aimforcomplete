@@ -1,5 +1,6 @@
 #pragma once
 #include "showThings.h"
+#include "moveKind.h"
 
 #define MOVE_RIGHT 2
 #define MOVE_LEFT 1
@@ -13,7 +14,7 @@ public:
 	bar();
 	bar(int barx);
 	virtual bool show() override;
-	void move(char moveNum);
+	void move(std::shared_ptr<moveKind> moveK);
 	int getPointX();
 	virtual ~bar();
 };

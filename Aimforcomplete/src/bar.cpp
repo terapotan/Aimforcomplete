@@ -16,14 +16,9 @@ bar::bar(int barx){
 
 
 
-void bar::move(char moveNum)
+void bar::move(std::shared_ptr<moveKind> moveK)
 {
-	if (moveNum == 1) {
-		barx -= 2;
-	}
-	else if (moveNum == 2) {
-		barx += 2;
-	}
+	barx = moveK->move(barx);
 }
 
 int bar::getPointX()
