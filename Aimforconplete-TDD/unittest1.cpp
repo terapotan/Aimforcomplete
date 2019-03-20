@@ -13,30 +13,9 @@ namespace AimforconpleteTDD
 	{
 	public:
 
-		
-		TEST_METHOD(ballDraw)
-		{
-			std::unique_ptr<ball> ballp(new ball());
-			Assert::IsTrue(ballp->show());
-
-		}
 
 
-		TEST_METHOD(barDraw) {
-
-			std::unique_ptr<bar> barp(new bar());
-			Assert::IsTrue(barp->show());
-
-		}
-
-
-		TEST_METHOD(blockDraw) {
-			std::unique_ptr<block> blockp(new block());
-			Assert::IsTrue(blockp->show());
-
-		}
-
-
+		/*
 		TEST_METHOD(moveBar) {
 			std::unique_ptr<bar> barpLeft(new bar(0));
 			std::unique_ptr<bar> barpRight(new bar(0));
@@ -55,6 +34,7 @@ namespace AimforconpleteTDD
 			Assert::IsTrue(movedBar->show());
 
 		}
+		*/
 
 
 		TEST_METHOD(inUserKey) {

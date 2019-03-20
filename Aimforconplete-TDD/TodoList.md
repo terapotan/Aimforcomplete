@@ -51,8 +51,9 @@
 - ~~コンストラクタに画面ロード処理(loadgraph関数実行)追加~~
 - ~~show関数にある画面ロード処理(loadgraph関数実行)を削除~~
 - ~~移動速度を目に見えるレベルまで抑える~~
-- 
-
+- ~~moveとmoveRight,moveLeftの重複を取り除く~~
+- move関数のelse-ifを消去する
+- char*のところを生ポインタ以外の形で受け取るようにする(生ポインタのままだと危険)
 
 
 
@@ -64,8 +65,6 @@ interface showThings{
 }
 class bar{
     - int barx
-    + void moveRight()
-    + void moveLeft()
     + void move(char moveNum)
     + int getPointX()
     + void show()
@@ -83,6 +82,9 @@ class drawingLib{
 class userInKey{
     + void getUserHitKey(char* recKeyData)
 }
+class main{
+    + WinMain
+}
 
 showThings <|.. bar
 showThings <|.. block
@@ -90,7 +92,8 @@ showThings <|.. ball
 drawingLib <-down- bar
 drawingLib <-down- block
 drawingLib <-down- ball
-
+main --> bar
+main --> userInKey
 @enduml
 ~~~
 

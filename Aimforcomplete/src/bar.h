@@ -13,8 +13,6 @@ public:
 	bar();
 	bar(int barx);
 	virtual bool show() override;
-	void moveRight();
-	void moveLeft();
 	void move(char moveNum);
 	int getPointX();
 	virtual ~bar();

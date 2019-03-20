@@ -32,5 +32,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="TodoList.md" />
+    <None Include="nlunit.pl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="nlunitcode.txt" />
   </ItemGroup>
 </Project>

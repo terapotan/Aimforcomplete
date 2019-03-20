@@ -172,7 +172,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="nlunit.pl" />
     <None Include="TodoList.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="nlunitcode.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
